@@ -11,12 +11,12 @@
   <h1>윤석열 탄핵 그림판</h1>
   <div class="controls">
     <div class="control-group">
-      <label>이미지 업로드: <input type="file" id="imageUpload" accept="image/*"></label>
+      <label>이미지 업로드 <input type="file" id="imageUpload" accept="image/*"></label>
     </div>
 
     <!-- 이미지 선택 메뉴 -->
     <div class="control-group">
-      <label>이미지 선택:</label>
+      <label>이미지 선택</label>
       <div class="thumbnail-group">
         <label class="thumbnail-item">
           <input type="radio" name="selectedImage" value="01.jpg">
@@ -70,23 +70,23 @@
     </div>
 
     <div class="control-group">
-      <label>텍스트 입력 (여러 단어 가능): <input type="text" id="textInput" value="탄핵 독재자 반란"></label><br>
-      <small>여러 단어를 공백으로 구분하세요.</small>
+      <label>텍스트 입력 (여러 단어 가능) <input type="text" id="textInput" value="탄핵 독재자 내란"></label><br>
+      <small>단어를 공백으로 구분하세요.</small>
     </div>
     <div class="control-group">
-      <label>폰트 크기(px): 
+      <label>글자 크기(px)
         <input type="range" id="fontSizeInput" min="10" max="40" value="25">
         <span id="fontSizeValue">25</span>
       </label>
     </div>
     <div class="control-group">
-      <label>간격(px): 
+      <label>간격(px)
         <input type="range" id="gapInput" min="1" max="4" value="2">
         <span id="gapValue">2</span>
       </label>
     </div>
     <div class="control-group">
-      <label>글꼴 선택: 
+      <label>글꼴 선택
         <select id="fontFamilySelect">
           <option value="sans-serif">sans-serif</option>
           <option value="serif">serif</option>
@@ -98,13 +98,13 @@
       </label>
     </div>
     <div class="control-group">
-      <span>색상 옵션:</span><br>
+      <span>색상 옵션</span><br>
       <label><input type="radio" name="colorMode" value="image" checked> 이미지 색상 사용</label><br>
       <label><input type="radio" name="colorMode" value="custom"> 사용자 지정 색상: 
         <input type="color" id="customColor" value="#000000"></label>
     </div>
     <div class="control-group">
-      <label>텍스트 분포 (1=5%, 2=10%, 3=15%, 4=20%)</label><br>
+      <label>텍스트 분포 (1-4)</label><br>
       <input type="range" id="textDistInput" min="1" max="4" value="1">
       <span id="textDistValue">2</span>
     </div>
@@ -127,7 +127,7 @@
   </div>
   
   <p>이미지 업로드 또는 위 이미지들 중 하나를 선택한 뒤,<br>
-  옵션 조정 후 "이미지 변환"을 누르면 텍스트 이미지로 변환됩니다.</p>
+  옵션 조정 후 '이미지 변환'을 누르면 텍스트 이미지로 변환됩니다.</p>
 </div>
 <script src="script.js"></script>
 </body>
